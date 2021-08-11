@@ -10,10 +10,36 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="no-scroll">
+    <div class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-content">
+          <!-- <h1 class="logo">
+            <img src="img/logo.svg" alt="Game Vault" width="50" />
+          </h1> -->
+
+          <h1>Welcome to GamesVault</h1>
+          <p>To continue, please sign-in with MetaMask.</p>
+
+          <button type="button" class="modal-btn">
+            <img src="img/metamask-fox.svg" class="btn-icon" width="20" />
+            <span class="btn-text">Sign-in with MetaMask</span>
+          </button>
+
+          <span class="sub-text">
+            For more information on MetaMask, read
+            <a
+              href="https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-Started-With-MetaMask"
+              >Getting Started With MetaMask</a
+            >.</span
+          >
+        </div>
+      </div>
+    </div>
+
     <div class="page">
       <header>
-        <h1 class="main-logo">
+        <h1 class="main-logo logo">
           <img src="img/logo.svg" alt="Game Vault" width="50" />
         </h1>
         <nav>
@@ -37,7 +63,7 @@
           </div>
         </div>
       </header>
-      <div class="container page-container content-header">
+      <div class="container page-container">
         <div class="heading-container">
           <h1 class="page-header">Store</h1>
         </div>
@@ -52,57 +78,6 @@
         </div>
       </div>
       <div class="container page-container main-container">
-        <section class="sidebar">
-          <div class="search">
-            <form id="search">
-              <input type="text" placeholder="Search..." class="search-input" />
-            </form>
-          </div>
-          <nav>
-            <h1>Tag</h1>
-            <ul class="tag-navigation vertical-nav nav">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Adventure</a></li>
-              <li><a href="#">Indie</a></li>
-              <li><a href="#">RPG</a></li>
-              <li><a href="#">Strategy</a></li>
-              <li><a href="#">Open World</a></li>
-              <li><a href="#">Shooter</a></li>
-              <li><a href="#">Puzzle</a></li>
-              <li><a href="#">First Person</a></li>
-              <li><a href="#">Narration</a></li>
-              <li><a href="#">Simulation</a></li>
-              <li><a href="#">Casual</a></li>
-              <li><a href="#">Turn-Based</a></li>
-              <li><a href="#">Exploration</a></li>
-              <li><a href="#">Horror</a></li>
-              <li><a href="#">Platformer</a></li>
-              <li><a href="#">Party</a></li>
-              <li><a href="#">Survival</a></li>
-              <li><a href="#">Trivia</a></li>
-              <li><a href="#">City Builder</a></li>
-              <li><a href="#">Stealth</a></li>
-              <li><a href="#">Fighting</a></li>
-              <li><a href="#">Comedy</a></li>
-              <li><a href="#">Action-Adventure</a></li>
-              <li><a href="#">Racing</a></li>
-              <li><a href="#">Rogue-Lite</a></li>
-              <li><a href="#">Card Game</a></li>
-              <li><a href="#">Sports</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <h1>Developer</h1>
-            <ul class="developer-navigation vertical-nav nav">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Adventure</a></li>
-              <li><a href="#">Indie</a></li>
-              <li><a href="#">RPG</a></li>
-              <li><a href="#">Strategy</a></li>
-            </ul>
-          </nav>
-        </section>
-
         <main class="main">
           <div class="main-content grid">
             <div class="cell">
@@ -467,6 +442,57 @@
             </div>
           </div>
         </main>
+
+        <section class="sidebar">
+          <div class="search">
+            <form id="search">
+              <input type="text" placeholder="Search..." class="search-input" />
+            </form>
+          </div>
+          <nav>
+            <h1>Tag</h1>
+            <ul class="tag-navigation vertical-nav nav">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Adventure</a></li>
+              <li><a href="#">Indie</a></li>
+              <li><a href="#">RPG</a></li>
+              <li><a href="#">Strategy</a></li>
+              <li><a href="#">Open World</a></li>
+              <li><a href="#">Shooter</a></li>
+              <li><a href="#">Puzzle</a></li>
+              <li><a href="#">First Person</a></li>
+              <li><a href="#">Narration</a></li>
+              <li><a href="#">Simulation</a></li>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Turn-Based</a></li>
+              <li><a href="#">Exploration</a></li>
+              <li><a href="#">Horror</a></li>
+              <li><a href="#">Platformer</a></li>
+              <li><a href="#">Party</a></li>
+              <li><a href="#">Survival</a></li>
+              <li><a href="#">Trivia</a></li>
+              <li><a href="#">City Builder</a></li>
+              <li><a href="#">Stealth</a></li>
+              <li><a href="#">Fighting</a></li>
+              <li><a href="#">Comedy</a></li>
+              <li><a href="#">Action-Adventure</a></li>
+              <li><a href="#">Racing</a></li>
+              <li><a href="#">Rogue-Lite</a></li>
+              <li><a href="#">Card Game</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <h1>Developer</h1>
+            <ul class="developer-navigation vertical-nav nav">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Adventure</a></li>
+              <li><a href="#">Indie</a></li>
+              <li><a href="#">RPG</a></li>
+              <li><a href="#">Strategy</a></li>
+            </ul>
+          </nav>
+        </section>
       </div>
       <footer class="footer">
         <div class="container">
