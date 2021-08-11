@@ -1,0 +1,361 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+/* Variables */
+:root {
+  --main-bg-color: #121212;
+  --main-text-color: #b7b7b7;
+
+  --header-bg-color: #050505;
+  --nav-active-bg-color: #0f0f0f;
+  --nav-hover-bg-color: #1a1919;
+  --nav-hover-text-color: #fffff;
+  --nav-text-inactive-color: #808080;
+  --heading-text-color: #ffffff;
+  --link-active-text-color: #ffffff;
+  --block-bg-color: #2a2a2a;
+
+  --sub-nav-active-bg: #202020;
+  --sub-nav-hover-bg: #2b2a2a;
+
+  --heading-font-family: "Raleway", sans-serif;
+  --body-font-family: "Inter", sans-serif;
+
+  --rounded-corner-radius: 3px;
+}
+
+/* globals */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-text-color);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--body-font-family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+header {
+  margin-bottom: 2rem;
+  display: flow-root;
+  padding: 2rem;
+  background: var(--header-bg-color);
+}
+
+input {
+  background-color: var(--header-bg-color);
+  border: none;
+  border-radius: var(--rounded-corner-radius);
+  color: var(--block-bg-color);
+  width: 100%;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border: 2px solid var(--header-bg-color);
+}
+
+input::placeholder {
+  color: var(--block-bg-color);
+}
+
+input:focus {
+  border: 2px solid #2b2b2b;
+  outline: none;
+}
+
+/* classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  float: left;
+}
+
+.wallet {
+  float: right;
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-size: 0.9em;
+  width: 360px;
+}
+
+.address {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: rem;
+  color: #b0b0b0;
+}
+
+.account {
+  background: #000;
+  padding: 0.5rem;
+  border-radius: 0 var(--rounded-corner-radius) var(--rounded-corner-radius) 0;
+}
+
+.balance {
+  padding: 0.5rem;
+  background: #0d0d0d;
+  color: #fff;
+  border-radius: var(--rounded-corner-radius) 0 0 var(--rounded-corner-radius);
+}
+
+.metamask-icon {
+  float: right;
+  border-radius: 100%;
+}
+
+.main-logo {
+  float: left;
+  margin-right: 2rem;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  transition: 0.3s;
+}
+
+.horizontal-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 0;
+}
+
+.horizontal-nav li {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5rem;
+  border-radius: var(--rounded-corner-radius);
+}
+
+.main-navigation a:hover {
+  background-color: var(--nav-hover-bg-color);
+  color: var(--nav-hover-text-color);
+}
+
+.main-navigation a.active {
+  background-color: var(--nav-active-bg-color);
+  color: var(--link-active-text-color);
+}
+
+.page-header {
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  color: var(--heading-text-color);
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.store-navigation {
+  margin-top: 0.9rem;
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+}
+
+.store-navigation .active {
+  background-color: var(--sub-nav-active-bg);
+  color: var(--link-active-text-color);
+}
+
+.store-navigation a:hover {
+  background-color: var(--sub-nav-hover-bg);
+}
+
+.page {
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.grid .cell {
+}
+
+.game-cover {
+  border-radius: var(--rounded-corner-radius);
+  width: 100%;
+}
+
+.page-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-container {
+  flex-direction: row-reverse;
+}
+
+.nav-container {
+  flex: 4;
+}
+
+.sidebar,
+.heading-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.main {
+  flex: 4;
+}
+
+.game-details {
+  margin: 1rem 0 3rem 0;
+}
+
+.game-title {
+  font-size: 0.7em;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.game-developer {
+  font-size: 0.6em;
+  color: var(--main-text-color);
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.price-cell {
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+
+.game-price {
+  background: var(--block-bg-color);
+  border-radius: var(--rounded-corner-radius);
+  color: var(--link-active-text-color);
+  padding: 0.5rem;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.game-details {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+.game-link {
+  transition: 0.3s;
+  display: block;
+}
+
+.game-link img {
+  background-color: var(--block-bg-color);
+}
+
+.game-link:hover {
+  opacity: 0.6;
+}
+
+.eth {
+  background-image: url(../img/ethereum.svg);
+  background-size: 16px 16px;
+  background-position: 2px 7px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.search-input {
+  background-image: url(../img/search.svg);
+  background-size: 16px 16px;
+  background-position: right 0.5rem top 0.5rem;
+  background-repeat: no-repeat;
+}
+
+.sidebar {
+  font-size: 0.8em;
+}
+
+.sidebar h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5rem;
+  clear: both;
+}
+
+.sidebar nav {
+  margin-top: 2rem;
+  clear: both;
+  float: left;
+}
+
+.vertical-nav li {
+  float: left;
+  clear: both;
+}
+
+.vertical-nav .active {
+  background-color: var(--sub-nav-active-bg);
+  color: var(--link-active-text-color);
+}
+
+.vertical-nav a:hover {
+  background-color: var(--sub-nav-hover-bg);
+}
+
+.footer {
+  background-color: var(--header-bg-color);
+  padding: 6rem 0;
+  margin-top: 4rem;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-transform: uppercase;
+  padding-left: 6rem;
+}
+
+.footer .nav a {
+  font-size: 0.8em;
+  color: #6d6d6d;
+  float: left;
+  clear: both;
+}
+
+.footer .nav a:hover {
+  background-color: #0f0f0f;
+}
+
+.footer h1 {
+  font-size: 0.9em;
+  padding: 0.5rem;
+  color: #a1a1a1;
+}
